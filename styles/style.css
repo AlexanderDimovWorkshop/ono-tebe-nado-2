@@ -1,1 +1,428 @@
-/* место для вашего кода */
+/*Шапка сайта*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  grid-template-rows: 105px;
+  margin: 92px 24px 96px;
+}
+
+.navigation {
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  padding-top: 5px;
+  padding-right: 16px;
+  padding-left: 24px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 388px;
+}
+
+.link-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.active-link {  
+  text-decoration: none;  
+}
+
+.active-link-link-item {  
+  padding-left: 2px;
+  list-style: none;
+}
+
+.no-active-link {   
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  
+}
+
+.conteiner-header-logo-image {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;  
+}
+
+.header-image-logo {  
+  width: 148px;
+  height: 105px;
+}
+
+.contakts {
+  display: grid;
+  justify-items: start;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  align-items: first baseline;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 185px;  
+  text-underline-offset: 4px;
+}
+
+.contakts-text {
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+/*Ковёр сайта*/
+
+.jambotron {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 757px;
+  background-image: url("http://127.0.0.1/ono-tebe-nado-2/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6);  
+}
+
+.jambotron-text { 
+  display: inline-block;
+  width: 100%;
+  padding: 0 50px;
+  color: #fff;
+  font-weight: 700; 
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.text-left {     
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-top: 165px;
+  line-height: 115px;
+  text-align: left;
+}
+
+.text-center {  
+  display: inline-block;  
+  margin-bottom: 20px;
+  padding-left: 336px;
+}
+
+.text-right {
+  display: inline-block;
+  padding-left: 633px;
+  text-align: right;  
+}
+
+.letter-spacing-03{
+  letter-spacing: 0.3em;
+}
+
+.letter-spacing-06{
+  letter-spacing: 0.6em;
+}
+
+.letter-spacing-00{
+  letter-spacing: 0;
+}
+
+/*Ковёр сайта меню*/
+
+.jambotron-footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 135px;
+  padding-bottom: 51px;
+}
+
+.jambotron-footer-text {
+  display: flex;
+  align-items: center;
+  padding-left: 82px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 127%;
+  text-align: left;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.jambotron-footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 51px;
+  margin-right: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.letter-spacing-13 {
+  letter-spacing: 1.3em;
+}
+
+.letter-spacing-11 {
+  letter-spacing: 1.1em;
+}
+
+/*Секция лоты*/
+
+.lots {
+  width: 100%;
+  margin: 179px 0 0 0;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  display: inline-block;
+  width: 100%;
+  height: 74px;
+  padding-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 100%;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex: 1;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  height: 563px;
+  /*width: 334px;*/
+  padding: 48px 40px;
+}
+
+.overlay-card {
+  position: relative;  
+  inset: -563px 0 0 0;
+  z-index: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card_type_film {
+  background-image: url("http://127.0.0.1/ono-tebe-nado-2/images/card-lot-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url("http://127.0.0.1/ono-tebe-nado-2/images/card-lot-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url("http://127.0.0.1/ono-tebe-nado-2/images/card-lot-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.card__text {
+  opacity: 0.9;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  word-spacing: 1px;
+}
+
+.lots__look-more-link {
+  display: inline;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-decoration: underline;  
+  text-underline-offset: 4px;  
+}
+
+.lots__look-more {
+  display: block;
+  width: 100%;
+  padding: 32px 0 0 40px;  
+}
+
+/*Секция about*/
+
+.about {
+  width: 100%;
+  margin-top: 146px;
+  padding: 0 24px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 1ft 2ft;
+  grid-template-rows: 1ft;
+}
+
+.about__logo {
+  grid-column: 1;
+  border: #000 1px;
+  padding: 35px 0 0 47px;
+}
+
+.container_about__logo-image {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 240px;
+  height: 240px;
+  border: 1px solid;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #000;
+  
+}
+.about__logo-image {
+  display: flex;
+  justify-content: center;
+  width: 148px;
+  height: 114px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__article {
+  grid-column: 2;
+  margin-left: 72px;
+  padding-top: 134px;
+}
+
+.about__title {
+  display: inline-block;
+  padding-bottom: 101px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.article__text {
+  display: inline-block;
+  padding-bottom: 26px;
+}
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 178px;
+  padding: 0 50px 91px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+}
+
+.address__text{
+  display: inline-block;
+  padding: 0 1px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.footer__menu {
+  display: inline-block;
+  margin: 1px 39px 1px 0;
+}
+
+.footer__menu-list-item {  
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {  
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  padding-top: 2px;
+}
+
+.footer__social-list-item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  list-style: none;
+}

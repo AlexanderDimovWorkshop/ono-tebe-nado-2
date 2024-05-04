@@ -20,7 +20,10 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+address,
+p,
+div {
   margin: 0;
   padding: 0;
 }
