@@ -1,2 +1,2 @@
-# ono-tebe-nado-2
-Проект "Оно тебе надо" 
+# ono-tebe-nado
+https://github.com/AlexanderDimovWorkshop/ono-tebe-nado-2.git
