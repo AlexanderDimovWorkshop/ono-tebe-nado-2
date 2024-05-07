@@ -1,2 +1,2 @@
 # ono-tebe-nado-2
-git@github.com:AlexanderDimovWorkshop/ono-tebe-nado-2.git
+https://github.com/AlexanderDimovWorkshop/ono-tebe-nado-2.git
